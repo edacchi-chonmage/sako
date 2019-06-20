@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+ul > li {
+  opacity: 0.3;
+  transition: 300ms ease-out;
+
+  & + li {
+    margin-left: 20px;
+  }
+}
+
+ul > li:hover,
+ul > li.is-current {
+  opacity: 1;
+}
