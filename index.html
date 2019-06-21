@@ -4,11 +4,17 @@
     <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
-    <ul id="jsi-slider">
-      <li><img src="http://picsum.photos/id/1/280/200" alt=""></li>
-      <li><img src="http://picsum.photos/id/101/280/200" alt=""></li>
-      <li><img src="http://picsum.photos/id/201/280/200" alt=""></li>
-    </ul>
+    <div class="slider" id="jsi-slider">
+      <ul class="slider-container" class="jsc-slider-container">
+        <li><img src="http://picsum.photos/id/1/280/200" alt=""></li>
+        <li><img src="http://picsum.photos/id/101/280/200" alt=""></li>
+        <li><img src="http://picsum.photos/id/201/280/200" alt=""></li>
+      </ul>
+    </div>
+    <div class="slider-trigger">
+      <a href="javascript: void(0);" class="slider-trigger-next"><img src="./src/images/arrow.svg" alt=""></a>
+      <a href="javascript: void(0);" class="slider-trigger-prev"><img src="./src/images/arrow.svg" alt=""></a>
+    </div>
     <script src="./src/ts/index.ts"></script>
   </body>
 </html>
